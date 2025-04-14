@@ -1,4 +1,3 @@
-local palletes = require("yellow.theme_palletes");
+local colorscheme = require("yellow.config").colorscheme
 
-return palletes.kanagawa_paper;
-
+return require("yellow.colorschemes." .. colorscheme)

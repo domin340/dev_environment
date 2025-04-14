@@ -1,3 +1,2 @@
-require("yellow.core");
-require("yellow.lazy");
-
+require("yellow.core")
+require("yellow.lazy")
