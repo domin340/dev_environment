@@ -24,30 +24,16 @@ return {
 			},
 		})
 
+		local _install = require("yellow.plugins.lsp.config.install")
+
 		mason_lspconfig.setup({
 			-- list of servers for mason to install
-			ensure_installed = {
-				"clangd",
-				"ts_ls",
-				"html",
-				"cssls",
-				"lua_ls",
-				"emmet_ls",
-				"pyright",
-			},
+			ensure_installed = _install.servers,
 			automatic_installation = true,
 		})
 
 		mason_tool_installer.setup({
-			ensure_installed = {
-				"prettier", -- prettier formatter
-				"stylua", -- lua formatter
-				"isort", -- python formatter
-				"black", -- python formatter
-				"pylint",
-				"eslint_d",
-				"clang-format",
-			},
+			ensure_installed = _install.formatters,
 		})
 	end,
 }

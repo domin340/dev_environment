@@ -32,9 +32,10 @@ return {
 		-- keymaps
 		local keymap = vim.keymap
 
-		keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "open file explorer" })
-		keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "find file" })
-		keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "close file explorer" })
+		keymap.set("n", "<leader>ec", "<cmd>NvimTreeClose<CR>", { desc = "closes the explorer " })
+		keymap.set("n", "<leader>ee", "<cmd>NvimTreeOpen<CR>", { desc = "find file" })
+		keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFile<CR>", { desc = "finds the current file" })
+		keymap.set("n", "<leader>el", "<cmd>NvimTreeCollapse<CR>", { desc = "close file explorer" })
 		keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "refresh file explorer" })
 	end,
 }
