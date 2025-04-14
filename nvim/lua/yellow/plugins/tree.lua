@@ -3,7 +3,7 @@ return {
 	dependencies = "nvim-tree/nvim-web-devicons",
 	config = function()
 		local nvimtree = require("nvim-tree")
-		local icons = require("yellow.custom_extensions.tree_expand_icons")
+		local icons = require("yellow.custom.tree_expand_icons")
 
 		vim.g.loaded_netrw = 1
 		vim.g.loaded_netrwPlugin = 1
