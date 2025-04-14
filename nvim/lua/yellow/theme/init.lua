@@ -14,7 +14,7 @@ return function()
 
 		-- auto
 		if theme == "auto" or theme == "default" then
-			return schemes.default()
+			return schemes.default(today)
 		-- chosen
 		elseif type(theme) == "string" then
 			local chosen = schemes[theme]
