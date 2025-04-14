@@ -19,10 +19,13 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({
+local plugins = {
 	{ import = "yellow.plugins" },
 	{ import = "yellow.plugins.lsp" },
-}, {
+	{ import = "yellow.plugins.treesitter" },
+}
+
+require("lazy").setup(plugins, {
 	checker = {
 		enabled = true,
 		notify = false,

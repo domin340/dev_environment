@@ -5,11 +5,11 @@ return {
 	dependencies = { "windwp/nvim-ts-autotag" },
 	config = function()
 		local treesitter = require("nvim-treesitter.configs")
+		local languages = require("yellow.plugins.treesitter.config.install")
 
 		-- handle all parsers
 		local configs = require("nvim-treesitter.parsers").get_parser_configs()
-		local parser_setup = require("yellow.plugins.parsers.setup")
-		parser_setup(configs)
+		require("yellow.plugins.treesitter.parsers.setup")(configs, languages)
 
 		treesitter.setup({
 			auto_install = true,
@@ -18,22 +18,7 @@ return {
 			highlight = { enable = true },
 			indent = { enable = true },
 			autotag = { enable = true },
-			ensure_installed = {
-				"json",
-				"typescript",
-				"javascript",
-				"html",
-				"css",
-				"markdown",
-				"markdown_inline",
-				"bash",
-				"lua",
-				"vim",
-				"vimdoc",
-				"c",
-				"cpp",
-				"haxe",
-			},
+			ensure_installed = languages,
 			incremental_selection = {
 				enable = true,
 				keymaps = {
