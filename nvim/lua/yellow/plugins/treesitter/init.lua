@@ -12,6 +12,7 @@ return {
 		require("yellow.plugins.treesitter.parsers.setup")(configs, languages)
 
 		treesitter.setup({
+			modules = {},
 			auto_install = true,
 			ignore_install = {},
 			sync_install = false,
