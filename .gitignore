@@ -1,2 +1,6 @@
 nvim.bak/
 
+# every art except for README
+nvim/lua/yellow/art/*
+!nvim/lua/yellow/art/README.md
+
