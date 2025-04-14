@@ -3,7 +3,8 @@ return {
 	dependencies = "nvim-tree/nvim-web-devicons",
 	config = function()
 		local nvimtree = require("nvim-tree")
-		local icons = require("yellow.custom.tree_expand_icons")
+		local theme = require("yellow.theme")
+		local folder_icons = theme()
 
 		vim.g.loaded_netrw = 1
 		vim.g.loaded_netrwPlugin = 1
@@ -17,7 +18,7 @@ return {
 				indent_markers = { enable = true },
 				icons = {
 					glyphs = {
-						folder = icons(),
+						folder = folder_icons.arrows,
 					},
 				},
 			},
