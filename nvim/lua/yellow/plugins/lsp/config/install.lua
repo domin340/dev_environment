@@ -7,6 +7,7 @@ local servers = {
 	"emmet_ls",
 	"pyright",
 	"haxe_language_server",
+	"gopls",
 }
 
 local formatters = {
