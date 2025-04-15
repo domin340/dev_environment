@@ -2,7 +2,7 @@
 nvim.bak/
 
 # remove go
-go
+go/
 
 # every art except for README
 nvim/lua/yellow/art/*
