@@ -1,4 +1,4 @@
----@param config NeovimConfiguration
+---@param config NvimConfiguration
 return function(config)
 	return {
 		"nvim-tree/nvim-tree.lua",

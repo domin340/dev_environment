@@ -3,6 +3,8 @@ local Module = {}
 Module.modules = {
 	colorscheme = require("yellow.plugins.preferences.modules.colorscheme"),
 	tree = require("yellow.plugins.preferences.modules.tree"),
+	alpha = require("yellow.plugins.preferences.modules.alpha"),
+	lualine = require("yellow.plugins.preferences.modules.lualine"),
 }
 
 Module.config = require("yellow.config")

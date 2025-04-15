@@ -1,6 +1,6 @@
 local enum = require("yellow.enum")
 
----@class NeovimConfiguration
+---@class NvimConfiguration
 ---@field colorscheme table
 ---@field theme NvimConfigurationTheme
 local config = {

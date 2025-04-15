@@ -1,4 +1,4 @@
----@param config NeovimConfiguration
+---@param config NvimConfiguration
 return function(config)
 	return config.colorscheme
 end
