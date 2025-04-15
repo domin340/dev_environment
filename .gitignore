@@ -9,3 +9,7 @@ nvim/lua/yellow/art/*
 !nvim/lua/yellow/art/README.md
 !nvim/lua/yellow/art/nvim.lua
 
+# every theme scheme except for default
+nvim/lua/yellow/theme/schemes/
+!nvim/lua/yellow/theme/schemes/default.lua
+
