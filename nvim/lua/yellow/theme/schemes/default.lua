@@ -1,5 +1,5 @@
-local Utilities = require("yellow.theme.utilities")
+local Themes = require("yellow.utilities.themes")
 
 return function()
-	return Utilities:custom("nvim", {})
+	return Themes:custom("nvim", {})
 end
