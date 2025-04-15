@@ -12,8 +12,8 @@ end
 
 function Themes:defineArrows(closing, open)
 	return {
-		arrow_closed = closing or self.default_arrows[0],
-		arrow_open = open or self.default_arrows[1],
+		arrow_closed = closing or self.default_arrows[1],
+		arrow_open = open or self.default_arrows[2],
 	}
 end
 
@@ -31,7 +31,7 @@ end
 ---@param arrows table<string, string>
 ---@return NvimConfigurationTheme
 function Themes:custom(art_subpath, arrows)
-	local arrow_set = self:defineArrows(arrows[0], arrows[1])
+	local arrow_set = self:defineArrows(arrows[1], arrows[2])
 	local art = Path.importArt(art_subpath)
 	local alpha_header = self.normalizeAlpha(art)
 
