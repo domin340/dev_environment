@@ -1,4 +1,4 @@
-local custom = require("yellow.theme.custom")
+local Utilities = require("yellow.theme.utilities")
 
 local function get_alpha(selection, is_single)
 	local random = math.random(2, 3)
@@ -19,5 +19,5 @@ local alpha_selection = {
 return function(today)
 	local is_single = true
 	local alpha_path = get_alpha(alpha_selection, is_single)
-	return custom(alpha_path, arrows)
+	return Utilities:custom(alpha_path, arrows)
 end

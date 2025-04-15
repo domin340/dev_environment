@@ -1,5 +1,5 @@
-local custom = require("yellow.theme.custom")
+local Utilities = require("yellow.theme.utilities")
 
 return function(today)
-	return custom("anime.mimikyu", {})
+	return Utilities:custom("anime.mimikyu", {})
 end
