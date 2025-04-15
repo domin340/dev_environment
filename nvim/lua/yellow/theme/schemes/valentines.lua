@@ -16,7 +16,7 @@ local alpha_selection = {
 	"anime.fujiwara",
 }
 
-return function(today)
+return function()
 	local is_single = true
 	local alpha_path = get_alpha(alpha_selection, is_single)
 	return Utilities:custom(alpha_path, arrows)
