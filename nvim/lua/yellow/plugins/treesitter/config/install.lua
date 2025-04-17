@@ -12,6 +12,6 @@ return {
 	"vimdoc",
 	"c",
 	"cpp",
-	"haxe",
 	"go",
+	"haxe",
 }
