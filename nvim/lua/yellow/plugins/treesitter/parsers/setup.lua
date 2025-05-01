@@ -1,6 +1,4 @@
-local parsers = {
-	haxe = require("yellow.plugins.treesitter.parsers.haxe"),
-}
+local parsers = {}
 
 return function(configs, languagues)
 	for _, name in ipairs(languagues) do
