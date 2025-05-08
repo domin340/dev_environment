@@ -8,7 +8,7 @@ local servers = {
 	"pyright",
 	"gopls",
 
-	-- for test/temporary purposes
+	-- for testing/temporary purposes
 	"intelephense", -- php
 }
 
@@ -24,7 +24,7 @@ local formatters = {
 	"eslint_d", -- ts etc
 	"clang-format", -- c/c++
 
-	-- for test/temporary purposes
+	-- for testing/temporary purposes
 	"php-cs-fixer", -- php
 }
 

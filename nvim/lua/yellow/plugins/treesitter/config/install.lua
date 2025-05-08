@@ -13,4 +13,7 @@ return {
 	"c",
 	"cpp",
 	"go",
+
+	-- for test/temporary purposes
+	"php",
 }
