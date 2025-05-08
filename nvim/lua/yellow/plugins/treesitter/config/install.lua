@@ -13,5 +13,4 @@ return {
 	"c",
 	"cpp",
 	"go",
-	"odin",
 }

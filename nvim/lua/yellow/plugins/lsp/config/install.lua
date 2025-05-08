@@ -8,7 +8,6 @@ local servers = {
 	"pyright",
 	"haxe_language_server",
 	"gopls",
-	"ols", -- odin
 }
 
 local formatters = {
