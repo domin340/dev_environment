@@ -6,21 +6,26 @@ local servers = {
 	"lua_ls",
 	"emmet_ls",
 	"pyright",
-	"haxe_language_server",
 	"gopls",
+
+	-- for test/temporary purposes
+	"intelephense", -- php
 }
 
 local formatters = {
 	prettier = {
 		command = "prettier",
 		args = { "--stdin-filepath", "$FILENAME" },
-	},
+	}, -- various web stuff
 	"stylua", -- lua formatter
 	"isort", -- python formatter
 	"black", -- python formatter
-	"pylint",
-	"eslint_d",
-	"clang-format",
+	"pylint", -- python too
+	"eslint_d", -- ts etc
+	"clang-format", -- c/c++
+
+	-- for test/temporary purposes
+	"php-cs-fixer", -- php
 }
 
 return {
