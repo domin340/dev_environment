@@ -13,10 +13,7 @@ local servers = {
 }
 
 local formatters = {
-	prettier = {
-		command = "prettier",
-		args = { "--stdin-filepath", "$FILENAME" },
-	}, -- various web stuff
+	"prettier",
 	"stylua", -- lua formatter
 	"isort", -- python formatter
 	"black", -- python formatter

@@ -1,6 +1,5 @@
-return function(name, configs, capabilities)
+return function()
 	return {
-		capabilities = capabilities,
 		settings = {
 			Lua = {
 				diagnostics = {

@@ -1,15 +1,12 @@
-return function(name, configs, capabilities)
+return function()
 	return {
-		capabilities = capabilities,
-		filetypes = {
-			"html",
-			"typescriptreact",
-			"javascriptreact",
-			"css",
-			"sass",
-			"scss",
-			"less",
-			"svelte",
-		},
+		"html",
+		"typescriptreact",
+		"javascriptreact",
+		"css",
+		"sass",
+		"scss",
+		"less",
+		"svelte",
 	}
 end
