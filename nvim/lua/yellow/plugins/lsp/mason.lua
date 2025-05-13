@@ -5,6 +5,13 @@ return {
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
 	config = function()
+		local lspconfig = require("lspconfig")
+
+		local handlers = require("yellow.plugins.lsp.servers.setup")
+		for name, handler in pairs(handlers) do
+			lspconfig[name].setup(handler())
+		end
+
 		-- import mason
 		local mason = require("mason")
 
@@ -24,19 +31,16 @@ return {
 		})
 
 		local _install = require("yellow.plugins.lsp.servers._install")
+
 		mason_lspconfig.setup({
 			-- list of servers for mason to install
 			ensure_installed = _install.servers,
 			automatic_installation = true,
+			automatic_enable = true,
 		})
+
 		mason_tool_installer.setup({
 			ensure_installed = _install.formatters,
 		})
-
-		-- setup servers
-		local handlers = require("yellow.plugins.lsp.servers.setup")
-		for server_name, handler in pairs(handlers) do
-			vim.lsp.config(server_name, handler())
-		end
 	end,
 }

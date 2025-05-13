@@ -4,9 +4,7 @@ return function()
 			Lua = {
 				diagnostics = {
 					globals = {
-						-- Neovim Config
 						"vim",
-						-- LOVE2D
 						"love",
 					},
 				},
